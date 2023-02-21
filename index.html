@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>Welcome to the best form on Internet!</p>
+    <form action="" name="myForm" onsubmit="return validateForm()">
+        <div class="formdesign" id="name">
+            Name: <input type="text" name="fname" autocomplete="off" required><b><span class="formerror"></span></b>
+        </div>
+        <div class="formdesign" id="email">
+            Email: <input type="email" name="femail" autocomplete="off" required><b><span class="formerror"></span></b>
+        </div>
+        <div class="formdesign" id="phone">
+            Phone: <input type="phone" name="fphone" autocomplete="off" required><b><span class="formerror"></span></b>
+        </div>
+        <div class="formdesign" id="pass">
+            Password: <input type="password" name="fpass" autocomplete="off" required><b><span class="formerror"></span></b>
+        </div>
+        <div class="formdesign" id="cpass">
+            Confirm Password: <input type="password" name="fcpass" autocomplete="off" required><b><span class="formerror"></span></b>
+        </div>
+        <input class="but" type="submit" value="Submit">
+    </form>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
+
+<!-- Here onsubmit="return validateForm()" means if this return value comes true only then submit the form otherwise don't submit the form -->
