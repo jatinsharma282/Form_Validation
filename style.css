@@ -5,7 +5,8 @@ html {
 body {
     padding: 1rem 5rem;
     letter-spacing: 1px;
-    background:url('Bg-img.jpg');
+    background: url(Bg-img.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 
 p{
