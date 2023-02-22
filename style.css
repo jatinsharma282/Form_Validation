@@ -5,7 +5,7 @@ html {
 body {
     padding: 1rem 5rem;
     letter-spacing: 1px;
-    background-color:rgb(28, 216, 201);
+    background:url('Bg-img.jpg');
 }
 
 p{
